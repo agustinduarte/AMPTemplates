@@ -1,6 +1,9 @@
 {
   "id": "adnet-templates",
-  "origin": "ADNET Servers",
+  "authors": ["adm"],
   "url": "https://github.com/agustinduarte/AMPTemplates",
-  "prefix": "adnet"
+  "origin": "https://github.com/agustinduarte/AMPTemplates.git",
+  "prefix": "adnet",
+  "imagefile": "",
+  "repotype": "AppTemplates"
 }
