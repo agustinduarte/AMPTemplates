@@ -50,7 +50,7 @@ App.HasReadableConsole=True
 App.SupportsLiveSettingsChanges=False
 App.LiveSettingChangeCommandFormat=set {0} "{1}"
 App.ApplicationIPBinding=0.0.0.0
-App.Ports=@IncludeJson[cs2-adnetports.json]
+
 App.AdminPortRef=ServerPort
 App.PrimaryApplicationPortRef=ServerPort
 App.UniversalSleepApplicationUDPPortRef=ServerPort
@@ -94,7 +94,7 @@ Console.MetricsRegex=
 Console.SuppressLogAtStart=False
 Console.ActivateLogRegex=
 Console.UserActions={}
-Limits.SleepMode=True
+Limits.SleepMode=False
 Limits.SleepOnStart=False
 Limits.SleepDelayMinutes=5
 Limits.DozeDelay=2
