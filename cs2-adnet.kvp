@@ -8,7 +8,7 @@ Meta.URL=https://www.counter-strike.net/cs2
 Meta.DisplayImageSource=steam:730
 Meta.EndpointURIFormat=steam://connect/{ip}:{GenericModule.App.Ports.$ServerPort}
 Meta.ConfigManifest=cs2-adnetconfig.json
-
+Meta.MetaConfigManifest=cs2-adnetmetaconfig.json
 Meta.ConfigRoot=cs2-adnet.kvp
 Meta.MinAMPVersion=2.4.6.4
 Meta.SpecificDockerImage=cubecoders/ampbase:debian-12
@@ -50,7 +50,7 @@ App.HasReadableConsole=True
 App.SupportsLiveSettingsChanges=False
 App.LiveSettingChangeCommandFormat=set {0} "{1}"
 App.ApplicationIPBinding=0.0.0.0
-
+App.Ports=@IncludeJson[cs2-adnetports.json]
 App.AdminPortRef=ServerPort
 App.PrimaryApplicationPortRef=ServerPort
 App.UniversalSleepApplicationUDPPortRef=ServerPort
@@ -67,7 +67,7 @@ App.RCONConnectRetrySeconds=5
 App.RCONHeartbeatMinutes=0
 App.RCONHeartbeatCommand=ping
 App.TelnetLoginFormat={0}
-
+App.UpdateSources=@IncludeJson[cs2-adnetupdates.json]
 App.PreStartStages=[]
 App.ForceUpdate=False
 App.ForceUpdateReason=
